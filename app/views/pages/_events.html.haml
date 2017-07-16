@@ -1,0 +1,9 @@
+-events.each do |event|
+  %h3= event.title
+  %h4= event.excerpt
+  %h4= event.description
+  %h4= event.show_date
+  %h4= event.ticket_link
+  %h4= event.price_text
+
+  = image_tag(event.image_url.present? ? event.image_url : 'http://www.finlandia.edu/wp-content/plugins/events-calendar-pro/src/resources/images/tribe-related-events-placeholder.png')

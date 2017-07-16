@@ -1,6 +1,8 @@
 
-- unless (%w[team]).include? @page.title
+- if @page.title == 'team'
+  = render partial: 'pages/team_members', locals: { team_members: @team_members }
+- elsif @page.title == 'events'
+  = render partial: 'pages/events', locals: { events: @events }
+-else
   %h2= @page.title.titleize
   %h4= @page.content.html_safe
--else
-  = render partial: 'pages/team_members', locals: { team_members: @resources }
