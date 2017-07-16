@@ -42,6 +42,11 @@ Page.create!(
   content: 'events page'
 )
 
+Page.create!(
+  title: 'news',
+  content: 'news page'
+)
+
 TeamMember.create(
   name: 'Colleen',
   title: 'Web Developer',
@@ -66,4 +71,20 @@ Event.create(
   show_date: DateTime.new(2017, 8, 8, 12),
   ticket_link: 'www.google.com',
   price_text: '$89 - $120'
+)
+
+NewsUpdate.create(
+  title: 'news update',
+  link: 'www.google.com',
+  excerpt: 'a really fun news update',
+  image_url: 'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx',
+  hide: false
+)
+
+NewsUpdate.create(
+  title: 'another news update',
+  link: 'www.google.com',
+  excerpt: 'another really fun news update',
+  image_url: 'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx',
+  hide: true
 )
