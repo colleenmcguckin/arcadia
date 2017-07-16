@@ -19,7 +19,7 @@ ActiveAdmin.register Page do
   form do |f|
     f.inputs "Page Details" do
       f.input :title
-      f.input :content
+      f.input :content, as: :ckeditor
     end
     f.actions
   end

@@ -34,6 +34,8 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'hamlit'
 gem 'devise'
 gem 'activeadmin'
+gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'paperclip'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
