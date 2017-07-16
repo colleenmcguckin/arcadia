@@ -3,6 +3,8 @@
   = render partial: 'pages/team_members', locals: { team_members: @team_members }
 - elsif @page.title == 'events'
   = render partial: 'pages/events', locals: { events: @events }
+- elsif @page.title == 'news'
+  = render partial: 'pages/news', locals: { news_updates: @news_updates }
 -else
   %h2= @page.title.titleize
   %h4= @page.content.html_safe
