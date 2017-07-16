@@ -5,5 +5,6 @@ class PagesController < ApplicationController
 
   def show
     @page = Page.friendly.find(params[:id])
+    @resources = TeamMember.all if %w[team].include? @page.title
   end
 end

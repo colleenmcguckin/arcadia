@@ -31,3 +31,8 @@ Page.create!(
   title: 'visit us',
   content: 'visit us page'
 )
+
+Page.create(
+  title: 'team',
+  content: 'team page'
+)

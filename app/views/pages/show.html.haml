@@ -1,2 +1,6 @@
-%h2= @page.title.titleize
-%h4= @page.content.html_safe
+
+- unless (%w[team]).include? @page.title
+  %h2= @page.title.titleize
+  %h4= @page.content.html_safe
+-else
+  = render partial: 'pages/team_members', locals: { team_members: @resources }
