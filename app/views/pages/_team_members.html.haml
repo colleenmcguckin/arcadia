@@ -1,0 +1,5 @@
+-team_members.each do |team_member|
+  %h2= team_member.name
+  %h3= team_member.title
+  %h4= team_member.bio
+  = image_tag(team_member.image_url)
