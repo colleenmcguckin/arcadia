@@ -32,6 +32,7 @@ gem 'pg'
 gem 'friendly_id', '~> 5.1.0'
 
 gem 'hamlit'
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
