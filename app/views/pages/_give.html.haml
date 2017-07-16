@@ -1,0 +1,5 @@
+- giving_options.each do |giving_option|
+  %h2= giving_option.link
+  %h3= giving_option.title
+  %h4= giving_option.description
+  = image_tag(giving_option.image_url)

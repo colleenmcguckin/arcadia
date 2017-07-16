@@ -47,6 +47,11 @@ Page.create!(
   content: 'news page'
 )
 
+Page.create!(
+  title: 'give',
+  content: 'give page'
+)
+
 TeamMember.create(
   name: 'Colleen',
   title: 'Web Developer',
@@ -87,4 +92,11 @@ NewsUpdate.create(
   excerpt: 'another really fun news update',
   image_url: 'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx',
   hide: true
+)
+
+GivingOption.create(
+  link: 'www.google.com',
+  title: 'Donate',
+  image_url: 'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx',
+  description: 'donate by giving here'
 )
