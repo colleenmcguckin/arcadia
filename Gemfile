@@ -33,6 +33,7 @@ gem 'friendly_id', '~> 5.1.0'
 
 gem 'hamlit'
 gem 'devise'
+gem 'activeadmin'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
