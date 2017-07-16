@@ -36,3 +36,34 @@ Page.create(
   title: 'team',
   content: 'team page'
 )
+
+Page.create!(
+  title: 'events',
+  content: 'events page'
+)
+
+TeamMember.create(
+  name: 'Colleen',
+  title: 'Web Developer',
+  bio: 'the person making this website',
+  image_url: 'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx'
+)
+
+Event.create(
+  title: 'an event',
+  excerpt: 'something really fun',
+  description: 'an event beyond epic proportions',
+  show_date: DateTime.new(2017, 8, 1, 12),
+  ticket_link: 'www.google.com',
+  price_text: '$89 - $120',
+  image_url: 'https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx'
+)
+
+Event.create(
+  title: 'another event',
+  excerpt: 'pizza party',
+  description: 'pepperoni and sausage',
+  show_date: DateTime.new(2017, 8, 8, 12),
+  ticket_link: 'www.google.com',
+  price_text: '$89 - $120'
+)
