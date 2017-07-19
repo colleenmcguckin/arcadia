@@ -7,6 +7,8 @@
   = render partial: 'pages/news', locals: { news_updates: @news_updates }
 - elsif @page.title == 'give'
   = render partial: 'pages/give', locals: { giving_options: @giving_options }
+- elsif @page.title == 'home'
+  = render partial: 'pages/home', locals: { events: @events }
 -else
   %h2= @page.title.titleize
   %h4= @page.content.html_safe
