@@ -1,0 +1,14 @@
+%h1 Upcoming Events
+.row
+  - events.each do |event|
+    .col-sm-4
+      -# = image_tag((event.image_url.present? ? event.image_url : 'http://www.finlandia.edu/wp-content/plugins/events-calendar-pro/src/resources/images/tribe-related-events-placeholder.png'), width: '50%')
+      -# .row
+      -#   = link_to event.title, event.ticket_link
+      .card{:style => "width: 20rem;"}
+        = image_tag event.image_url.present? ? event.image_url : 'http://www.finlandia.edu/wp-content/plugins/events-calendar-pro/src/resources/images/tribe-related-events-placeholder.png', class: 'card-img-top rounded-circle w-100'
+        -# %img.card-img-top{:alt => "Card image cap", :src => "..."}/
+        .card-block
+          %h4.card-title= event.title
+          %p.card-text= event.excerpt
+          %a.btn.btn-primary{:href => "#"} Go somewhere

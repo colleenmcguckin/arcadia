@@ -1,0 +1,27 @@
+%nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+  %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarNavDropdown", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavDropdown", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  %a.navbar-brand{:href => "/home"}
+    = image_tag('logo.png', width: '50%')
+  #navbarNavDropdown.collapse.navbar-collapse
+    %ul.navbar-nav.justify-content-md-between
+      %li.nav-item.active
+        %a.nav-link{:href => "/home"}
+          Home
+          %span.sr-only (current)
+      %li.nav-item
+        %a.nav-link{:href => "/events"} Tickets
+      %li.nav-item
+        %a.nav-link{:href => "/give"} Give
+      %li.nav-item
+        %a.nav-link{:href => "/news"} In the News
+      %li.nav-item.dropdown
+        %a#navbarDropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "http://example.com"}
+          About
+        .dropdown-menu{"aria-labelledby" => "navbarDropdownMenuLink"}
+          %a.dropdown-item{:href => "#"} Mission
+          %a.dropdown-item{:href => "#"} Team
+          %a.dropdown-item{:href => "#"} Visit Us
+          %a.dropdown-item{:href => "#"} Rentals
+      %li.nav-item
+        %a.nav-link{:href => "#"} Contact
